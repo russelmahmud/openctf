@@ -1,0 +1,30 @@
+version: '3.4'
+
+services:
+  db:
+    image: postgres
+    volumes:
+      - ~/data/postgresql:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_DB=openctfdb
+      - POSTGRES_PASSWORD=openctf
+      - POSTGRES_USER=openctf
+
+  api:
+    image: openctf-api
+    build: ./openctf_api
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ./openctf_api/:/app/
+    ports:
+      - 8000:8000
+    environment:
+      - POSTGRES_DB=openctfdb
+      - POSTGRES_USER=openctf
+      - POSTGRES_PASSWORD=openctf
+      - POSTGRES_HOST=db
+      - DATABASE=postgres
+    depends_on:
+      - db
