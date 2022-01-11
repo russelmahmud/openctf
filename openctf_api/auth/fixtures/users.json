@@ -1,0 +1,27 @@
+[
+{
+    "model": "authentication.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$320000$5TdTKToY4Pvi1zKvNNkViQ$Jmws3EIBu3EAHUTprmmUWCvSE5YYzD7A52S5IbCLb1I=",
+        "last_login": null,
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "admin@openctf.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2022-01-11T13:05:03.946Z",
+        "organization": "",
+        "gender": null,
+        "player_type": null,
+        "phone": "",
+        "picture": "",
+        "tagline": "",
+        "public": false,
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]
