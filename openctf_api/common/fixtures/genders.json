@@ -1,0 +1,16 @@
+[
+{
+    "model": "common.gender",
+    "pk": 1,
+    "fields": {
+        "name": "Male"
+    }
+},
+{
+    "model": "common.gender",
+    "pk": 2,
+    "fields": {
+        "name": "Female"
+    }
+}
+]

@@ -1,0 +1,16 @@
+[
+{
+    "model": "common.playertype",
+    "pk": 1,
+    "fields": {
+        "name": "Student"
+    }
+},
+{
+    "model": "common.playertype",
+    "pk": 2,
+    "fields": {
+        "name": "Professional"
+    }
+}
+]

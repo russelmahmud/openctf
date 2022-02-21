@@ -16,6 +16,8 @@ class PlayerType(models.Model):
 
     class Meta:
         db_table = 'player_types'
+        verbose_name = 'Player Type'
+        verbose_name_plural = 'Player Types'
 
     def __str__(self) -> str:
         return self.name
